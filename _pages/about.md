@@ -4,6 +4,24 @@ title: About Me
 permalink: /about/
 ---
 
+
+## 프로젝트
+
+
+## 수상내역
+
+
+## 대외활동
+'-' 2019 삼성 SDS 멘토링 프로그램 참가(6월,11월)
+'-' 2019 DB기업경영캠프 (2019.8.26 ~ 2019.8.28)
+'-' 2019 대학교 해외봉사 활동 (라오스 / 2020.1.6 ~ 2020.1.20)
+
+
+## 프로그래밍 스킬
+'-' Python
+'-' C
+'-' R
+
 This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
 
 
