@@ -21,6 +21,8 @@ permalink: /about/
 
 ### 프로그래밍 스킬
 '-' Python
+
 '-' C
+
 '-' R
 
