@@ -47,7 +47,7 @@
     
         ,"post4": {
             "title": "Title",
-            "content": "2914 . A,B=map(int,input().split()) print(A*(B-1)+1) . 91 . 10699 . import datetime d=datetime.datetime.now() . str(d) . &#39;2022-07-26 18:59:14.984271&#39; . print(str(d)[:10]) . 2022-07-26 . 2588 . a=int(input()) b=int(input()) print(a*b) . 181720 . type(a),type(b) . (int, int) . number=123 . sum(map(int, str(number))) . 6 .",
+            "content": "2752 . &#53952;&#47160;&#45796;&#45716; &#54400;&#51060; 1 . k=input().split() k1=sorted(k) print(k1[0],k1[1],k1[2]) . 1 2 3 . &#53952;&#47160;&#45796;&#45716; &#54400;&#51060; 2 . k=input().split() k.sort() print(k[0],k[1],k[2]) . 1 2 3 . &#47582;&#51008; &#54400;&#51060;... . N = input().split() n = list(map(int, N)) n.sort() print(n[0], n[1], n[2]) . 1 2 3 . 10757 . A,B=map(int,input().split()) print(A+B) . 18446744073709551615 . 10817 . k=input().split() K=list(map(int,k)) K.sort() print(K[1]) . 10 .",
             "url": "https://sjinc.github.io/SeokJInChoi/2022/08/04/%EB%B0%B1%EC%A4%80.html",
             "relUrl": "/2022/08/04/%E1%84%87%E1%85%A2%E1%86%A8%E1%84%8C%E1%85%AE%E1%86%AB.html",
             "date": " • Aug 4, 2022"
