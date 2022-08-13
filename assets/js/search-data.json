@@ -4,9 +4,9 @@
         "post0": {
             "title": "백준 2단계 조건문",
             "content": "(1) 두 수 비교하기 . 문제 두 정수 A와 B가 주어졌을 때, A와 B를 비교하는 프로그램을 작성 . - 입력 : 첫째 줄에 A와 B가 주어진다. A와 B는 공백 한 칸으로 구분되어져 있다. . - 출력 : 첫째 줄에 다음 세 가지중 하나를 출력한다. . A가 B보다 큰 경우에는 &#39;&gt;&#39;를 출력한다. | A가 B보다 작은 경우에는 &#39;&lt;&#39;를 출력한다. | A와 B가 같은 경우에는 &#39;==&#39;를 출력한다. | . a,b=map(int,input().split()) if a&gt;b: print(&quot;&gt;&quot;) elif a&lt;b: print(&quot;&lt;&quot;) elif a==b: print(&quot;==&quot;) . &lt; . (2) 시험성적 . 문제 시험 점수를 입력받아 90~100점 A, 80~89 B, 70~79 C, 60~69 D, 나머지 F를 출력하는 프로그램을 작성 . - 입력 : 첫째 줄에 시험점수가 주어진다. 시험 점수는 0보다 크거나 같고, 100보다 작거나 같은 정수이다. . - 출력 : 시험 성적을 출력한다. . record=int(input()) if (record&lt;=100) &amp; (record&gt;=90): print(&quot;A&quot;) elif (record&lt;=89) &amp; (record&gt;=80): print(&quot;B&quot;) elif (record&lt;=79) &amp; (record&gt;=70): print(&quot;C&quot;) elif (record&lt;=69) &amp; (record&gt;=60): print(&quot;D&quot;) elif (record&lt;=59): print(&quot;F&quot;) . F . (3) 윤년 . 문제 연도가 주어졌을 때, 윤년이면 1, 아니면 0을 출력하는 프로그램을 작성.윤년은 연도가 4의 배수이면서, 100의 배수가 아닐 때 또는 400의 배수일 때이다. . - 입력 : 첫째 줄에 연도가 주어진다. 연도는 1보다 크거나 같고, 4000보다 작거나 같은 자연수이다. . - 출력 : 첫째 줄에 윤년이면 1, 아니면 0을 출력한다. . year=int(input()) if ((year%4==0) &amp; (year%100 !=0)) |(year%400==0) : print(1) else : print(0) . 0 . (4) 사분면 고르기 . 문제 흔한 수학 문제 중 하나는 주어진 점이 어느 사분면에 속하는지 알아내는 것이다. 사분면은 아래 그림처럼 1부터 4까지 번호를 갖는다. 점의 좌표를 입력받아 그 점이 어느 사분면에 속하는지 알아내는 프로그램작성 . - 입력 : 첫 줄에는 정수 x가 주어짐(-1000 &lt;= x &lt;= 1000; x!=0) 다음 줄에는 정수 y가 주어짐 (-1000 &lt;= y &lt;= 1000; y!=0) . - 출력 : 점 (x,y)의 사분면 번호 (1,2,3,4 중 하나)를 출력 . x=int(input()) y=int(input()) if (x&gt;0) &amp; (y&gt;0): print(1) elif (x&lt;0) &amp; (y&gt;0): print(2) elif (x&lt;0) &amp; (y&lt;0): print(3) elif (x&gt;0) &amp; (y&lt;0): print(4) . 1 . (5) 알람 시계 . 문제 원래 설정되어 있는 알람을 45분 앞서는 시간으로 바꾸는 것. . - 입력 : 첫째 줄에 두 정수 H와 M이 주어짐.(0&lt;= H &lt;=23, 0&lt;= M &lt;= 59) 이것은 설정해놓은 알람시간이 H시 M분을 의미. 입력시간은 24시간 표현을 사용. 24시간 표현에서 하루의 시작은 0:00(자정)이고, 끝은 23:59(다음날 자정 1분전)이다. 시간을 나타낼 때, 불필요한 0은 사용하지 않는다. . - 출력 : 첫째 줄에 설정해야하는 알람 시간을 출력 (입력과 같은 형태로 출력) . H,M=map(int,input().split()) (H&gt;=0) &amp; (H&lt;=23) (M&gt;=0) &amp; (M&lt;=59) i . False . (6) 오븐 시계 . 문제 인공지능 오븐은 오븐구이가 끝나는 시간을 분 단위로 자동적으로 계산.요리를 시작하는 시각과 오븐구이를 하는데 필요한 시간이 분단위로 주어졌을 때, 오븐구이가 끝나는 시각을 계산하는 프로그램을 작성 . - 입력 : 첫째 줄에는 현재시각이 나옴. 현재 시각은 시 A(0&lt;=A&lt;=23)와 분 B(0&lt;=B&lt;=59)가 정수로 빈칸을 사이에 두고 순서대로 주어짐. 두번째 줄에는 요리하는데 필요한 시간 C(0&lt;=C&lt;=1000)가 분단위로 주어짐. . - 출력 : 첫째 줄에 종료되는 시각의 시와 분을 공백을 사이에 두고 출력 (단, 시는 0~23까지의 정수, 분은 0~59까지의 정수. 디지털 시계는 23시 59분에서 1분이 지나면 0시 0분이 된다.) . (7) 주사위 세개 . 문제 **1에서부터 6까지의 눈을 가진 3개의 주사위를 던져서 다음과 같은 규칙에 따라 상금을 받는 게임이 있다. . 같은 눈이 3개가 나오면 10,000원+(같은눈)*1,000원의 상금을 받게 된다. | 같은 눈이 2개만 나오는 경우에는 1,000원+(같은눈)*100원의 상금을 받게 된다. | 모두 다른 눈이 나오는 경우에는 (그 중 가장 큰 눈)*100원의 상금을 받게 된다. | - 입력 : 첫째 줄에 3개의 눈이 빈칸을 사이에 두고 각각 주어진다. . - 출력 : 첫째 줄에 게임의 상금을 출력한다. .",
-            "url": "https://sjinc.github.io/SeokJInChoi/2022/08/11/%EB%B0%B1%EC%A4%80-2%EB%8B%A8%EA%B3%84-%EC%A1%B0%EA%B1%B4%EB%AC%B8-1~4.html",
-            "relUrl": "/2022/08/11/%E1%84%87%E1%85%A2%E1%86%A8%E1%84%8C%E1%85%AE%E1%86%AB-2%E1%84%83%E1%85%A1%E1%86%AB%E1%84%80%E1%85%A8-%E1%84%8C%E1%85%A9%E1%84%80%E1%85%A5%E1%86%AB%E1%84%86%E1%85%AE%E1%86%AB-1~4.html",
-            "date": " • Aug 11, 2022"
+            "url": "https://sjinc.github.io/SeokJInChoi/2022/08/12/%EB%B0%B1%EC%A4%80-2%EB%8B%A8%EA%B3%84-%EC%A1%B0%EA%B1%B4%EB%AC%B8-1~4.html",
+            "relUrl": "/2022/08/12/%E1%84%87%E1%85%A2%E1%86%A8%E1%84%8C%E1%85%AE%E1%86%AB-2%E1%84%83%E1%85%A1%E1%86%AB%E1%84%80%E1%85%A8-%E1%84%8C%E1%85%A9%E1%84%80%E1%85%A5%E1%86%AB%E1%84%86%E1%85%AE%E1%86%AB-1~4.html",
+            "date": " • Aug 12, 2022"
         }
         
     
@@ -15,9 +15,9 @@
         ,"post1": {
             "title": "Title",
             "content": "&#48177;&#51456; 1&#45800;&#44228; &#51077;&#52636;&#47141;&#44284; &#49324;&#52825;&#50672;&#49328; . print(&quot;Hello World&quot;) . Hello World . (2) 두줄에 걸쳐 &quot;강한친구 대한육군&quot;을 출력 . print(&quot;강한친구 대한육군&quot;) print(&quot;강한친구 대한육군&quot;) . 강한친구 대한육군 강한친구 대한육군 . (3) 다음 그림을 출력 . / ) ( &#39;) ( / ) (__)| . print(&quot; / &quot;) print(&quot; ) ( &#39;)&quot;) print(&quot;( / )&quot;) print(&quot; (__)|&quot;) . / ) ( &#39;) ( / ) (__)| . 첫문장에 역슬래시는 escape문자이므로 주의! | . (4) 다음 그림 출력 . | _/| |q p| /} ( 0 )&quot;&quot;&quot; |&quot;^&quot;` | ||_/= __| . print(&quot;| _/|&quot;) print(&quot;|q p| /}&quot;) print(&quot;( 0 ) &quot; &quot; &quot; &quot;) print(&quot;| &quot;^ &quot;` |&quot;) print(&quot;||_/= __|&quot;) . | _/| |q p| /} ( 0 )&#34;&#34;&#34; |&#34;^&#34;` | ||_/= __| . ,&quot; 같은 문자들 주의! | . (5) 두정수 a와b를 입력받은 다음, a+b를 출력하는 프로그램 . 한줄에 a,b 모두 입력받게 하는 방법 . a, b = map(int, input().split()) print(a+b) . 3 . 줄 바뀌면서 입력받는 방법 . a=int(input()) b=int(input()) print(a+b) . 3 . (6) 두정수 a와b를 입력받은 다음, a-b를 출력하는 프로그램 . 한줄에 a,b 모두 입력받게 하는 방법 . a, b = map(int, input().split()) print(a-b) . 1 . a=int(input()) b=int(input()) print(a-b) . 1 . (7) 두정수 a와b를 입력받은 다음, a*b를 출력하는 프로그램 . a, b = map(int, input().split()) print(a*b) a, b = map(int, input().split()) print(a*b) . 2 . 12 . a, b = map(int, input().split()) print(a*b) print(a*b) . 2 2 . (8) 두정수 a와b를 입력받은 다음, a/b를 출력하는 프로그램 . a,b=map(int,input().split()) print(a/b) . 0.8 . (9) 두 자연수 A와 B가 주어진다. 이때, A+B, A-B, A*B, A/B(몫), A%B(나머지)를 출력하는 프로그램을 작성하시오. . a,b=map(int,input().split()) print(a+b) print(a-b) print(a*b) print(a//b) print(a%b) . 10 4 21 2 1 . (10) 준하는 사이트에 회원가입을 하다가 joonas라는 아이디가 이미 존재하는 것을 보고 놀랐다. 준하는 놀람을 ??!로 표현한다. 준하가 가입하려고 하는 사이트에 이미 존재하는 아이디가 주어졌을 때, 놀람을 표현하는 프로그램을 작성하시오. . 입력 :첫째 줄에 준하가 가입하려고 하는 사이트에 이미 존재하는 아이디가 주어진다. 아이디는 알파벳 소문자로만 이루어져 있으며, 길이는 50자를 넘지 않는다 | 출력 :첫째 줄에 준하의 놀람을 출력한다. 놀람은 아이디 뒤에 ??!를 붙여서 나타낸다. | . a=input() print(&quot;{}??!&quot;.format(a)) . joonas??! . (11)불기 연도가 주어질 때 이를 서기 연도로 바꿔 주는 프로그램을 작성하시오. . 입력 :서기 연도를 알아고복 싶은 불기연도 y가 주어짐 (1000&lt;=y&lt;3000) | 출력 :불기연도를 서기연도로 반환한 결과를 출력 | . 2541-1998 . 543 . y=int(input()) print(y-543) . 1998 . (12) (A+B)%C는 ((A%C) + (B%C))%C 와 같을까? . (A×B)%C는 ((A%C) × (B%C))%C 와 같을까? . 세 수 A, B, C가 주어졌을 때, 위의 네 가지 값을 구하는 프로그램을 작성하시오. . 입력 :첫째 줄에 A,B,C 가 순서대로 주어짐. | 출력 :첫째 줄에 (A+B)%C, 둘째 줄에 ((A%C) + (B%C))%C, 셋째 줄에 (A×B)%C, 넷째 줄에 ((A%C) × (B%C))%C를 출력한다. | . A,B,C=map(int,input().split()) print((A+B)%C) print(((A%C)+(B%C))%C) print((A*B)%C) print(((A%C)*(B%C))%C) . 1 1 0 0 . (13) 세자리수 자연수의 곱셈을 연산하는데 초등학생들의 방법으로 출력되게 만든다. -&gt; 즉 일의 자리수 연산 + 십의 자리수 연산 + 백의 자리수 연산 . (14) . ,r&#39;&quot;7 r`-_ ,&#39; ,/ . &quot;. L_r&#39; `~ / | | . 그림 출력 .",
-            "url": "https://sjinc.github.io/SeokJInChoi/2022/08/11/%EB%B0%B1%EC%A4%80-1%EB%8B%A8%EA%B3%84-%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B3%BC-%EC%82%AC%EC%B9%99%EC%97%B0%EC%82%B0-1~12.html",
-            "relUrl": "/2022/08/11/%E1%84%87%E1%85%A2%E1%86%A8%E1%84%8C%E1%85%AE%E1%86%AB-1%E1%84%83%E1%85%A1%E1%86%AB%E1%84%80%E1%85%A8-%E1%84%8B%E1%85%B5%E1%86%B8%E1%84%8E%E1%85%AE%E1%86%AF%E1%84%85%E1%85%A7%E1%86%A8%E1%84%80%E1%85%AA-%E1%84%89%E1%85%A1%E1%84%8E%E1%85%B5%E1%86%A8%E1%84%8B%E1%85%A7%E1%86%AB%E1%84%89%E1%85%A1%E1%86%AB-1~12.html",
-            "date": " • Aug 11, 2022"
+            "url": "https://sjinc.github.io/SeokJInChoi/2022/08/12/%EB%B0%B1%EC%A4%80-1%EB%8B%A8%EA%B3%84-%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B3%BC-%EC%82%AC%EC%B9%99%EC%97%B0%EC%82%B0-1~12.html",
+            "relUrl": "/2022/08/12/%E1%84%87%E1%85%A2%E1%86%A8%E1%84%8C%E1%85%AE%E1%86%AB-1%E1%84%83%E1%85%A1%E1%86%AB%E1%84%80%E1%85%A8-%E1%84%8B%E1%85%B5%E1%86%B8%E1%84%8E%E1%85%AE%E1%86%AF%E1%84%85%E1%85%A7%E1%86%A8%E1%84%80%E1%85%AA-%E1%84%89%E1%85%A1%E1%84%8E%E1%85%B5%E1%86%A8%E1%84%8B%E1%85%A7%E1%86%AB%E1%84%89%E1%85%A1%E1%86%AB-1~12.html",
+            "date": " • Aug 12, 2022"
         }
         
     
@@ -26,9 +26,9 @@
         ,"post2": {
             "title": "Title",
             "content": "(13) 세자리수 자연수의 곱셈을 연산하는데 초등학생들의 방법으로 출력되게 만든다. -&gt; 즉 일의 자리수 연산 + 십의 자리수 연산 + 백의 자리수 연산 . a,b,c=map(int,input()) d,e,f=map(int,input()) . ValueError Traceback (most recent call last) Input In [26], in &lt;cell line: 1&gt;() -&gt; 1 a,b,c=map(int,input()) 2 d,e,f=map(int,input()) ValueError: invalid literal for int() with base 10: &#39; &#39; . type(a) . NameError Traceback (most recent call last) Input In [24], in &lt;cell line: 1&gt;() -&gt; 1 type(a) NameError: name &#39;a&#39; is not defined . (14) . ,r&#39;&quot;7 r`-_ ,&#39; ,/ . &quot;. L_r&#39; `~ / | | . 그림 출력 . ,r&#39;&quot;7 r`-_ ,&#39; ,/ . &quot;. L_r&#39; `~ / | | print(&quot; ,r &#39; &quot;7&quot;) print(&quot;r`-_ , &#39; ,/&quot;) print(&quot; . &quot;. L_r &#39;&quot;) print(&quot; `~ /&quot;) print(&quot; |&quot;) print(&quot; |&quot;) . ,r&#39;&#34;7 r`-_ ,&#39; ,/ . &#34;. L_r&#39; `~ / | | .",
-            "url": "https://sjinc.github.io/SeokJInChoi/2022/08/11/%EB%B0%B1%EC%A4%80-1%EB%8B%A8%EA%B3%84-%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B3%BC-%EC%82%AC%EC%B9%99%EC%97%B0%EC%82%B0-13,14.html",
-            "relUrl": "/2022/08/11/%E1%84%87%E1%85%A2%E1%86%A8%E1%84%8C%E1%85%AE%E1%86%AB-1%E1%84%83%E1%85%A1%E1%86%AB%E1%84%80%E1%85%A8-%E1%84%8B%E1%85%B5%E1%86%B8%E1%84%8E%E1%85%AE%E1%86%AF%E1%84%85%E1%85%A7%E1%86%A8%E1%84%80%E1%85%AA-%E1%84%89%E1%85%A1%E1%84%8E%E1%85%B5%E1%86%A8%E1%84%8B%E1%85%A7%E1%86%AB%E1%84%89%E1%85%A1%E1%86%AB-13,14.html",
-            "date": " • Aug 11, 2022"
+            "url": "https://sjinc.github.io/SeokJInChoi/2022/08/12/%EB%B0%B1%EC%A4%80-1%EB%8B%A8%EA%B3%84-%EC%9E%85%EC%B6%9C%EB%A0%A5%EA%B3%BC-%EC%82%AC%EC%B9%99%EC%97%B0%EC%82%B0-13,14.html",
+            "relUrl": "/2022/08/12/%E1%84%87%E1%85%A2%E1%86%A8%E1%84%8C%E1%85%AE%E1%86%AB-1%E1%84%83%E1%85%A1%E1%86%AB%E1%84%80%E1%85%A8-%E1%84%8B%E1%85%B5%E1%86%B8%E1%84%8E%E1%85%AE%E1%86%AF%E1%84%85%E1%85%A7%E1%86%A8%E1%84%80%E1%85%AA-%E1%84%89%E1%85%A1%E1%84%8E%E1%85%B5%E1%86%A8%E1%84%8B%E1%85%A7%E1%86%AB%E1%84%89%E1%85%A1%E1%86%AB-13,14.html",
+            "date": " • Aug 12, 2022"
         }
         
     
@@ -37,9 +37,9 @@
         ,"post3": {
             "title": "Title",
             "content": "5717 .",
-            "url": "https://sjinc.github.io/SeokJInChoi/2022/08/11/%EB%B0%B1%EC%A4%80.html",
-            "relUrl": "/2022/08/11/%EB%B0%B1%EC%A4%80.html",
-            "date": " • Aug 11, 2022"
+            "url": "https://sjinc.github.io/SeokJInChoi/2022/08/12/%EB%B0%B1%EC%A4%80.html",
+            "relUrl": "/2022/08/12/%EB%B0%B1%EC%A4%80.html",
+            "date": " • Aug 12, 2022"
         }
         
     
@@ -48,9 +48,9 @@
         ,"post4": {
             "title": "Title",
             "content": "7567 . d=list(str(input())) l=0 for i in range(len(d)): if i==0: l+=10 elif d[i-1]==d[i]: l+=5 else: l+=10 print(l) . 25 .",
-            "url": "https://sjinc.github.io/SeokJInChoi/2022/08/11/%EB%B0%B1%EC%A4%80.html",
-            "relUrl": "/2022/08/11/%E1%84%87%E1%85%A2%E1%86%A8%E1%84%8C%E1%85%AE%E1%86%AB.html",
-            "date": " • Aug 11, 2022"
+            "url": "https://sjinc.github.io/SeokJInChoi/2022/08/12/%EB%B0%B1%EC%A4%80.html",
+            "relUrl": "/2022/08/12/%E1%84%87%E1%85%A2%E1%86%A8%E1%84%8C%E1%85%AE%E1%86%AB.html",
+            "date": " • Aug 12, 2022"
         }
         
     
