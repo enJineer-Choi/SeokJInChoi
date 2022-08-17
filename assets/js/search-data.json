@@ -36,7 +36,7 @@
     
         ,"post3": {
             "title": "Title",
-            "content": "10988 . w=list(str(input())) if list(reversed(w))==w: print(1) else: print(0) . 0 .",
+            "content": "3009 . x=[] y=[] for i in range(3): a,b=map(int,input().split()) x.append(a) y.append(b) for i in range(3): if x.count(x[i])==1: x4=x[i] if y.count(y[i])==1: y4=y[i] print(x4,y4) .",
             "url": "https://sjinc.github.io/SeokJInChoi/2022/08/16/%EB%B0%B1%EC%A4%80.html",
             "relUrl": "/2022/08/16/%E1%84%87%E1%85%A2%E1%86%A8%E1%84%8C%E1%85%AE%E1%86%AB.html",
             "date": " • Aug 16, 2022"
