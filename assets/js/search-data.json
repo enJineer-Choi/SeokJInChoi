@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "Title",
-            "content": "",
+            "content": "10988 . w=list(str(input())) if list(reversed(w))==w: print(1) else: print(0) . 0 .",
             "url": "https://sjinc.github.io/SeokJInChoi/2022/09/07/%EB%B0%B1%EC%A4%80.html",
             "relUrl": "/2022/09/07/%E1%84%87%E1%85%A2%E1%86%A8%E1%84%8C%E1%85%AE%E1%86%AB.html",
             "date": " • Sep 7, 2022"
